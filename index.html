@@ -39,7 +39,7 @@
               <span>cm</span>
             </div>
             <div>
-              <p>Triangle Area is:  <span id="triangle-area">0</span><span>cm<sup>2</sup></span></p>
+              <p>Triangle Area is: <span id="triangle-area">0</span><span>cm<sup>2</sup></span></p>
             </div>
             <button onclick="triangleCalculator()" class="btn btn-primary">Calculate</button>
           </div>
@@ -59,37 +59,71 @@
               <span>cm</span>
             </div>
             <div>
-              <p>Rectangle Area is:  <span id="rectangle-total-area">0</span><span>cm<sup>2</sup></span></p>
+              <p>Rectangle Area is: <span id="rectangle-total-area">0</span><span>cm<sup>2</sup></span></p>
             </div>
             <button onclick="rectangleCalculator()" class="btn btn-primary">Calculate</button>
           </div>
         </div>
 
-        <!-- card two Parallelogram  -->
+        <!-- card three Parallelogram  -->
         <div class="card   bg-base-100 shadow-xl">
-          <figure><img src="./images/parallelogram.png" alt="Rectangle"></figure>
+          <figure><img src="./images/parallelogram.png" alt="Parallelogram"></figure>
           <div class="card-body text-center">
             <h2 class="card-title block text-center">Parallelogram</h2>
             <p>Area (A) = b x h</p>
             <!-- input -->
             <div class="flex gap-4 justify-center mb-5 text-xl">
-              <input id="rectangle-width" class="w-24 h-6 py-4 pl-3" type="text" placeholder="b">
-              <span>cm</span>
-              <input id="rectangle-height" class="w-24 h-6 py-4 pl-3" type="text" placeholder="h">
-              <span>cm</span>
+              <!-- input -->
+              <div class="flex gap-4 justify-center mb-5 text-xl">
+                <p>b = <input id="parallelogram-base" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+                <p>h = <input id="parallelogram-height" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+              </div>
             </div>
             <div>
-              <p>Parallelogram Area is:  <span id="rectangle-total-area">0</span><span>cm<sup>2</sup></span></p>
+              <p>Parallelogram Area is: <span id="parallelogram-area-return">0</span><span>cm<sup>2</sup></span></p>
+            </div>
+            <button onclick="calculateRhombusArea()" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+        <!-- card foru Rhombus  -->
+        <!-- <div class="card   bg-base-100 shadow-xl">
+          <figure><img src="./images/rhombus.png" alt="Rhombus"></figure>
+          <div class="card-body text-center">
+            <h2 class="card-title block text-center">Rhombus</h2>
+            <p>Area (A) = 0.5 x <span>d<sub>1</sub> </span> x <span>d<sub>2</sub></span></p>
+             //input 
+            <div class="flex gap-4 justify-center mb-5 text-xl">
+              <p>d<sub>1</sub>= <input id="rhombus-d1" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+              <p>d<sub>2</sub>= <input id="rhombus-d1" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+            </div>
+            <div>
+              <p>Rhombus Area is: <span id="">0</span><span>cm<sup>2</sup></span></p>
             </div>
             <button onclick="" class="btn btn-primary">Calculate</button>
           </div>
+        </div> -->
+
+        <!-- card five Pentagon  -->
+        <div class="card   bg-base-100 shadow-xl">
+          <figure><img src="./images/pentagon.png" alt="Parallelogram"></figure>
+          <div class="card-body text-center">
+            <h2 class="card-title block text-center">Pentagon</h2>
+            <p>Area (A) = b x h</p>
+            <!-- input -->
+            <div class="flex gap-4 justify-center mb-5 text-xl">
+              <div class="flex gap-4 justify-center mb-5 text-xl">
+                <p>p = <input id="pentagon-perimeter" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+                <p>b = <input id="pentagon-apothem" class="w-14 h-6 py-4 pl-3" type="text"> cm</p>
+              </div>
+            </div>
+            <div>
+              <p>Pentagon Area is: <span id="pentagon-area-return">0</span><span>cm<sup>2</sup></span></p>
+            </div>
+            <button onclick="calculatePentagon()" class="btn btn-primary">Calculate</button>
+          </div>
         </div>
-        
 
-
-
-        <!-- card threej -->
-        
       </div>
       <!-- calculating area  -->
       <div>
@@ -101,7 +135,10 @@
   </main>
 
 
-  <script src="triangle-calculate.js"></script>
+  <script src="./js/triangle-calculate.js"></script>
+  <script src="./js/parallelogram.js"></script>
+  <script src="./js/pentagon.js"></script>
+
 </body>
 
 </html>
