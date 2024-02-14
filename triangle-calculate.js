@@ -23,3 +23,25 @@ function triangleCalculator (){
     triangleAreaReturn.innerHTML = triangleArea;
     console.log(triangleAreaReturn)
 }
+
+// calculating the Rectangle
+
+function rectangleCalculator(){
+
+    //Rectangle width calculating
+    const rectangleWidthInput = document.getElementById('rectangle-width');
+    const widthInputValue = rectangleWidthInput.value
+
+    //Rectangle height calculating
+    const rectangleHeightInput = document.getElementById('rectangle-height');
+    const heightInput = rectangleHeightInput.value
+    
+    // calculation the rectangle area
+    const rectangleArea = heightInput * widthInputValue;
+    
+    // returning the result to the  input
+    const totalArea = document.getElementById('rectangle-total-area');
+    totalArea.innerText = rectangleArea;
+    console.log(totalArea)
+
+}
